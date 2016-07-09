@@ -1,26 +1,3 @@
-// Scroll Reveal
-var TopReveal = {
-	origin : 'top',
-	duration : 400,
-};
-var LeftReveal = {
-	origin : 'left',
-	duration : 500,
-};
-var RightReveal = {
-	origin : 'right',
-	duration : 500,
-};
-var BottomReveal = {
-	origin : 'right',
-	duration : 500,
-};
-window.sr = ScrollReveal({ reset: false } );
-sr.reveal( '.top', TopReveal );
-sr.reveal( '.right', RightReveal );
-sr.reveal( '.left', LeftReveal );
-sr.reveal( '.bottom', BottomReveal );
-
 // Fix Hide Menu on Anchor Click
 $(".navbar-nav li a").click(function (event) {
    // check if window is small enough so dropdown is created
