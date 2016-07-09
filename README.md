@@ -15,8 +15,8 @@ http://cloudofficer.co/
 https://www.airpair.com/js/jquery-ajax-post-tutorial
 
 Tips for deployment order and testing setup:
-Setup the Lambda function and run the ASW Lambda test to ensure it emails you.
-Setup the API Gateway and use the POST test button to make sure it can talk to Lambda and email you.
-Use a web browser POST plugin (Postman or HttpRequester) to verify your JSON posts to the API Gateway successfully and you get email.
-Now you know your AWS configuration is fine!
-At this point the HTML & Jquery should just work once the API Gateway URL is updated, but if not double check the code for typos...
+1 - Setup the Lambda function and run the ASW Lambda test to ensure it emails you.
+2 - Setup the API Gateway and use the POST test button to make sure it can talk to Lambda and email you.
+3 - Use a web browser POST plugin (Postman or HttpRequester) to verify your JSON posts to the API Gateway successfully and you get email.
+4 - Now you know your AWS configuration is fine!
+5 - At this point the HTML & Jquery should just work once the API Gateway URL is updated, but if not double check the code for typos...
