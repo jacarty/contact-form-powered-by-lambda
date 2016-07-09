@@ -1,0 +1,22 @@
+# contact-form-powered-by-lambda
+
+This is the code that I used to create the contact form on my website which is hosted on S3.
+This approach is a way to get around the static content limitation. 
+It uses HTML, Jquery, AWS API Gateway and AWS Lambda.
+
+Notes to get this working:
+1 - You will need to edit the custom.js file and update the URL (line 5) with your API Gateway URL.
+2 - You will need to update the Lambda Function code with your own source and destination Email addresses.
+3 - You should update the Lambda test JSON with a name and an email address.
+
+I used a whole heap of sources to work out how to do this. Standout credits go to the websites below.
+They provided a lot of the base ideas and code that I used/adapted to make this work!
+http://cloudofficer.co/
+https://www.airpair.com/js/jquery-ajax-post-tutorial
+
+Tips for deployment order and testing setup:
+Setup the Lambda function and run the ASW Lambda test to ensure it emails you.
+Setup the API Gateway and use the POST test button to make sure it can talk to Lambda and email you.
+Use a web browser POST plugin (Postman or HttpRequester) to verify your JSON posts to the API Gateway successfully and you get email.
+Now you know your AWS configuration is fine!
+At this point the HTML & Jquery should just work once the API Gateway URL is updated, but if not double check the code for typos...
