@@ -1,0 +1,272 @@
+/* ===========================================================
+   GENERAL STYLES   
+   ============================================================*/
+
+body {
+   font-family:'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #424242;   
+    margin-top: 40px;
+    line-height:16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+      font-family:'Open Sans', sans-serif;
+    font-weight: 500;
+   line-height:40px;
+}
+
+h1, h2, h3 {
+    color:#006dcc;
+    font-weight: 700;
+}
+
+h4, h5, h6 {
+	color:#424242;
+}
+
+.text-center {
+    text-align:center; 
+}
+
+.text-justify {
+    text-align:justify;
+}
+
+.main-top-margin {
+     margin-top: 75px;
+}
+
+.main-low-margin {
+     margin-top: 55px;
+}
+
+a:link {
+    color: #006dcc;
+}
+
+a:visited {
+    color: #006dcc;
+}
+
+a,a:hover {
+    text-decoration:none;
+}
+
+p {
+    line-height: 30px;
+    margin-bottom: 23px;
+}
+
+.img-margin-product {
+    margin-top:30px;
+}
+
+/* ==========================================================================
+   COLOR CODES
+   ========================================================================== */
+
+.color-black {
+    color:#000000;
+}
+
+.color-grey-standard {
+	color:#E6E6E6;
+}
+
+.color-grey-light {
+    color:#F2F2F2;
+}
+
+/* ==========================================================================
+   HEADER SECTION
+   ========================================================================== */
+
+#header-section {
+	background: url(../img/header.jpg) no-repeat center top;
+	margin-top: -20px;
+	padding-top:20px;
+	text-align:left;
+	background-position: center center;
+	min-height: 700px;
+	width: 100%;	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#header-section h1 {
+	margin-top: 120px;
+	color: #424242;
+	font-size: 65px;
+	font-weight: 900;
+	letter-spacing: 4px;
+    	line-height:70px;
+}
+
+#header-section h2 {
+	color: #424242;
+	font-size: 40px;
+	font-weight: 900;
+	letter-spacing: 4px;
+}
+
+.down-icon {
+     color:#424242;
+    font-weight:900;
+}
+
+.dropdown:hover .dropdown-menu {
+display: block;
+}
+
+/* ==========================================================================
+   ABOUT SECTION
+   ========================================================================== */
+
+#about-section {
+    background-color: #FAFAFA;
+    padding: 0px 0px 80px 0px;
+}
+
+/* ==========================================================================
+   Learning SECTION
+   ========================================================================== */
+
+#learning-section {
+    background-color: #F2F2F2;
+    padding: 0px 0px 80px 0px;
+}
+
+/* ==========================================================================
+   Contact SECTION
+   ========================================================================== */
+
+#contact-section {
+    background-color: #FAFAFA;
+    padding: 0px 0px 80px 0px;
+}
+
+/* ==========================================================================
+   ERROR SECTION
+   ========================================================================== */
+
+#error-section {
+    background-color: #FAFAFA;
+    padding: 0px 0px 80px 0px;
+}
+
+/* ==========================================================================	
+	STANDARD SECTION
+	========================================================================= */
+
+#standard-section {
+    background-color: #FAFAFA;
+    padding: 0px 0px 80px 0px;
+}
+
+/*  ==========================================================================
+	SOCIAL ICON STYLES
+	========================================================================== */
+
+.icons-gray {
+     color:#A4A4A4;
+}
+
+.icons-text-gray {
+     color:#424242;
+}
+/*  ==========================================================================
+	BOOTSTRAP ELEMENTS CHANGES   
+	========================================================================== */
+
+.navbar {
+	font-size: 14px;
+}
+
+.navbar-inverse {
+	background: #424242;
+	border-color: #5D5B66;
+}
+
+.navbar-inverse .navbar-nav > .active > a {
+	background: #ffffff;
+}
+
+.navbar-inverse .navbar-brand {
+	color: #ffffff;
+	font-weight: bolder;
+	font-size: 25px;
+    	font-weight:900;
+	letter-spacing: 2px;
+}
+.navbar-inverse :hover .navbar-brand:hover {
+	color: #ffffff;	
+}
+
+.navbar-inverse .navbar-nav > li > a {
+color: #FFFFFF;
+}
+
+/* ==========================================================================
+   FOOTER SECTION
+   ========================================================================== */
+
+#footer {
+    background-color: #424242; 
+    color: #A4A4A4; 
+    padding: 15px 0px 500px 0px;
+}
+
+.leftalign {
+	float: left;
+}
+
+.rightalign {
+	float: right;
+}
+
+/* ==========================================================================
+   PANELS
+   ========================================================================== */
+
+.panel-grey {
+    border-color: #848484;
+}
+
+.panel-grey > .panel-heading {
+    background: #848484; 
+    color: #ffffff;
+    border-color: #848484;
+}
+
+.fixed-panel {
+  min-height: 180px;
+}
+
+/* ==========================================================================
+   COLS
+   ========================================================================== */
+
+.learning-columns {
+  padding: 20px;
+  text-align: center;
+  background-image: -moz-linear-gradient(290deg, #FAFAFA -25%, #D8D8D8 50%, #FAFAFA 125%);
+  background-image: -webkit-linear-gradient(290deg, #FAFAFA -25%, #D8D8D8 50%, #FAFAFA 125%);
+  background-image: linear-gradient(160deg, #FAFAFA -25%, #D8D8D8 50%, #FAFAFA 125%);
+}
+
+.learning-columns .col-icon-wrapper {
+}
+
+.learning-columns .col-title {
+}
+
+.learning-columns .col-details {
+}
