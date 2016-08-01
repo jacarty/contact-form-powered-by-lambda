@@ -1,6 +1,14 @@
 // Contact form submission
     (function($){
         function processForm(e){
+			var captcha_response = grecaptcha.getResponse();
+			if(captcha_response.length == 0)
+			{
+				$('#response').html( "Please complete the reCaptcha box above and try again." );
+				return false;
+			}
+			else
+			{
             $.ajax({
                 url: 'https://API-NAME.execute-api.REGION.amazonaws.com/prod/myform',
 			    dataType: 'json',
