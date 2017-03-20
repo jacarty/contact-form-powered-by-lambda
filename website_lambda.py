@@ -44,3 +44,12 @@ def website_email(event, context):
         return "Hmm something didn't work. Please try again. Thanks!"
     else:
         return "Your message has been sent - I'll get back to you soon. Thanks!"
+        
+#Lambda Test JSON
+
+#{
+#    "name": "Your Name",
+#    "email": "Your Email Address",
+#    "subject": "hi",
+#    "message": "lambda is working"
+#}
