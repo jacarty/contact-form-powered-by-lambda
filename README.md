@@ -9,11 +9,12 @@ It uses HTML, Jquery, AWS API Gateway and AWS Lambda.
 Notes to get this working:
 1 - You will need to edit the custom.js file and update the URL (line 5) with your API Gateway URL.
 2 - You will need to update the Lambda Function code with your own source and destination Email addresses.
+2a - You have the choice of Node.js or Python 2.7 for the Lambda function.
 3 - You should update the Lambda test JSON with a name and an email address.
 4 - You will need to update the HTML code to reflect your google reCAPTCHA Site Key
 
 I used a whole heap of sources to work out how to do this. Credits go to the websites below.
-They provided a lot of the base ideas and code that I used/adapted to make this work!
+They provided a lot of the base ideas and code that I used/adapted to make this work for node.js!
 http://cloudofficer.co/
 https://www.airpair.com/js/jquery-ajax-post-tutorial
 
