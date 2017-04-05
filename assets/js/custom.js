@@ -1,20 +1,13 @@
 // Contact form submission
     (function($){
-        function processForm(e){
-			var captcha_response = grecaptcha.getResponse();
-			if(captcha_response.length == 0)
+		function processForm(e){
 			{
-				$('#response').html( "Please complete the reCaptcha box above and try again." );
-				return false;
-			}
-			else
-			{
-            $.ajax({
-                url: 'https://API-NAME.execute-api.REGION.amazonaws.com/prod/myform',
+			$.ajax({
+                url: 'https://API-NAME.execute-api.REGION.amazonaws.com/Prod/myform',
 			    dataType: 'json',
 			    type: 'post',
 			    contentType: 'application/json',
-			    data: JSON.stringify( { "name": $('#name').val(), "email": $('#email').val(), "subject": $('#subject').val(), "message": $('#message').val() } ),
+			    data: JSON.stringify( { "name": $('#name').val(), "email": $('#email').val(), "subject": $('#subject').val(), "message": $('#message').val(), "g-recaptcha": $('#g-recaptcha-response').val() } ),
 			    processData: false,
 			    success: function( data, textStatus, jQxhr ){
 			        $('#response').html( JSON.stringify(data) );
@@ -25,6 +18,8 @@
 			    }
 			});
             e.preventDefault();
+			grecaptcha.reset()
+			}
         }
-        $('#myform').submit(processForm);
+			$('#myform').submit(processForm);
 })(jQuery);
